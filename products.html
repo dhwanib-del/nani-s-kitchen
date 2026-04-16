@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Remedy Library — Nani's Skincare</title>
+  <meta name="description" content="Explore nani's home remedies by skin need — acne, glow, dry skin, and sensitive skin." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/products.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <div class="nav-inner container">
+        <a class="nav-logo" href="index.html">Nani's <span>Skincare</span></a>
+        <button class="nav-toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Open navigation menu">Menu</button>
+        <ul class="nav-links" id="nav-links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" aria-current="page">Remedies</a></li>
+          <li><a href="routines.html">Routines</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="share-recipe.html">Share</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" aria-labelledby="library-title">
+      <div class="container">
+        <p class="eyebrow">Explore</p>
+        <h1 id="library-title">Remedy Library</h1>
+        <p class="hero-lead">Simple remedies from Nani's kitchen — nothing extra, nothing complicated.</p>
+      </div>
+    </section>
+
+    <section class="filter" aria-label="Filter remedies">
+      <div class="container">
+        <div class="filter-bar" role="group" aria-label="Skin needs">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-button" type="button" data-filter="acne" aria-pressed="false">Acne</button>
+          <button class="filter-button" type="button" data-filter="dry" aria-pressed="false">Dry</button>
+          <button class="filter-button" type="button" data-filter="glow" aria-pressed="false">Glow</button>
+          <button class="filter-button" type="button" data-filter="sensitive" aria-pressed="false">Sensitive</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="remedy-heading">
+      <div class="container">
+        <h2 id="remedy-heading" class="visually-hidden">Remedy results</h2>
+        <ul class="remedy-grid" role="list">
+          <li data-category="glow" class="remedy-item">
+            <article class="remedy-card" aria-label="Haldi glow paste">
+              <img class="remedy-card-image" src="images/haldi.jpeg" alt="Turmeric paste being mixed for a traditional glow remedy." />
+              <div class="remedy-card-top">
+                <div>
+                  <p class="eyebrow">Haldi</p>
+                  <h3>Sunrise Ubtan</h3>
+                  <p class="remedy-card-desc">Turmeric, sandalwood, and rose to brighten dull skin without stripping.</p>
+                </div>
+                <div class="remedy-card-tags" aria-label="Benefits">
+                  <span class="chip">Glow</span>
+                  <span class="chip">Calming</span>
+                  <span class="chip">Weekly</span>
+                </div>
+              </div>
+              <div class="remedy-card-actions">
+                <button class="button button-ghost view-btn" data-remedy="haldi">View Remedy →</button>
+              </div>
+            </article>
+          </li>
+
+          <li data-category="acne" class="remedy-item">
+            <article class="remedy-card" aria-label="Neem clarifying mask">
+              <img class="remedy-card-image" src="images/tulsimask.jpeg" alt="A green herbal mask in a bowl for a clarifying skin ritual." />
+              <div class="remedy-card-top">
+                <div>
+                  <p class="eyebrow">Neem</p>
+                  <h3>Clarifying Leaf Mask</h3>
+                  <p class="remedy-card-desc">Neem, tulsi, and multani mitti to calm breakouts and balance oil.</p>
+                </div>
+                <div class="remedy-card-tags" aria-label="Benefits">
+                  <span class="chip">Acne</span>
+                  <span class="chip">Soothing</span>
+                  <span class="chip">Clay</span>
+                </div>
+              </div>
+              <div class="remedy-card-actions">
+                <button class="button button-ghost view-btn" data-remedy="neem">View Remedy →</button>
+              </div>
+            </article>
+          </li>
+
+          <li data-category="dry" class="remedy-item">
+            <article class="remedy-card" aria-label="Rice milky polish">
+              <img class="remedy-card-image" src="images/The Secret Japanese Anti-Aging Routine (Rice Water & Flaxseed).jpeg" alt="A creamy rice mask prepared for a softening and hydrating skin ritual." />
+              <div class="remedy-card-top">
+                <div>
+                  <p class="eyebrow">Rice</p>
+                  <h3>Cloud Rice Polish</h3>
+                  <p class="remedy-card-desc">Finely ground rice, milk, and honey for a gentle, hydrating exfoliation.</p>
+                </div>
+                <div class="remedy-card-tags" aria-label="Benefits">
+                  <span class="chip">Dry Skin</span>
+                  <span class="chip">Gentle</span>
+                  <span class="chip">Radiance</span>
+                </div>
+              </div>
+              <div class="remedy-card-actions">
+                <button class="button button-ghost view-btn" data-remedy="rice">View Remedy →</button>
+              </div>
+            </article>
+          </li>
+
+          <li data-category="sensitive" class="remedy-item">
+            <article class="remedy-card" aria-label="Besan rose soothe">
+              <img class="remedy-card-image" src="images/besanmask.jpg" alt="A besan face mask smoothed over skin for a gentle soothing treatment." />
+              <div class="remedy-card-top">
+                <div>
+                  <p class="eyebrow">Besan</p>
+                  <h3>Rose Besan Soothe</h3>
+                  <p class="remedy-card-desc">Chickpea flour with rose water and yogurt to calm and even tone.</p>
+                </div>
+                <div class="remedy-card-tags" aria-label="Benefits">
+                  <span class="chip">Sensitive</span>
+                  <span class="chip">Softening</span>
+                  <span class="chip">Cooling</span>
+                </div>
+              </div>
+              <div class="remedy-card-actions">
+                <button class="button button-ghost view-btn" data-remedy="besan">View Remedy →</button>
+              </div>
+            </article>
+          </li>
+
+          <li data-category="glow" class="remedy-item">
+            <article class="remedy-card" aria-label="Saffron dew">
+              <img class="remedy-card-image" src="images/sandalwood.jpg" alt="A creamy sandalwood-toned paste prepared in a small bowl for an evening ritual." />
+              <div class="remedy-card-top">
+                <div>
+                  <p class="eyebrow">Saffron</p>
+                  <h3>Dawn Saffron Dew</h3>
+                  <p class="remedy-card-desc">Saffron strands infused in almond milk for overnight luminosity.</p>
+                </div>
+                <div class="remedy-card-tags" aria-label="Benefits">
+                  <span class="chip">Glow</span>
+                  <span class="chip">Even Tone</span>
+                </div>
+              </div>
+              <div class="remedy-card-actions">
+                <button class="button button-ghost view-btn" data-remedy="saffron">View Remedy →</button>
+              </div>
+            </article>
+          </li>
+
+          <li data-category="acne" class="remedy-item">
+            <article class="remedy-card" aria-label="Tulsi steam">
+              <img class="remedy-card-image" src="images/ubtan.jpg" alt="A bowl of ubtan mixture set out for a traditional herbal skin treatment." />
+              <div class="remedy-card-top">
+                <div>
+                  <p class="eyebrow">Tulsi</p>
+                  <h3>Purifying Tulsi Steam</h3>
+                  <p class="remedy-card-desc">Holy basil leaves steeped for a gentle steam that clears and softens.</p>
+                </div>
+                <div class="remedy-card-tags" aria-label="Benefits">
+                  <span class="chip">Acne</span>
+                  <span class="chip">Pores</span>
+                  <span class="chip">Calming</span>
+                </div>
+              </div>
+              <div class="remedy-card-actions">
+                <button class="button button-ghost view-btn" data-remedy="tulsi">View Remedy →</button>
+              </div>
+            </article>
+          </li>
+        </ul>
+
+        <p class="no-results" id="no-results" hidden>No remedies found for this filter.</p>
+        <div id="remedy-display" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Gentle, home-crafted care inspired by nani's timeless remedies.</p>
+    </div>
+  </footer>
+  <script src="js/nav.js" defer></script>
+  <script src="js/products.js" defer></script>
+</body>
+</html>

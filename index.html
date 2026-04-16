@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nani's Skincare — Natural Beauty Rooted in Tradition</title>
+  <meta name="description" content="Story-led skincare inspired by Indian home remedies and nani's timeless wisdom." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <div class="nav-inner container">
+        <a class="nav-logo" href="index.html">Nani's <span>Skincare</span></a>
+
+        <ul class="nav-links" id="nav-links" role="list">
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="products.html">Remedies</a></li>
+          <li><a href="routines.html">Routines</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="share-recipe.html">Share</a></li>
+        </ul>
+        <button class="nav-toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Open navigation menu">Menu</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Rooted in tradition</p>
+          <h1 id="hero-title">
+            <span>Skincare the way</span>
+            <span class="hero-em">Nani always made it</span>
+          </h1>
+          <p class="hero-lead">
+            Simple kitchen remedies, written down the way Nani did them and shared without the hype.
+          </p>
+          <p class="nani-note">Nani means grandmother on your mom's side, usually the one with a remedy for everything.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#kitchen-recipes-title">Explore Remedies</a>
+            <a class="button button-ghost" href="share-recipe.html">Share Your Recipe</a>
+          </div>
+        </div>
+
+        <figure class="hero-image">
+          <img src="images/spicebox.jpg" alt="A wooden spice box filled with traditional ingredients used in homemade skincare remedies." />
+        </figure>
+      </div>
+    </section>
+
+    <section class="section kitchen-recipes" aria-labelledby="kitchen-recipes-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Nani's kitchen</p>
+          <h2 id="kitchen-recipes-title">The things that always found their way to the counter</h2>
+          <p class="section-lede">Not really recipes in the formal sense. Just the bowls and little mixes that kept showing up at the right time.</p>
+        </div>
+
+        <div class="recipe-groups" role="list">
+          <article class="recipe-group" role="listitem" aria-labelledby="recipe-group-everyday">
+            <h3 id="recipe-group-everyday">Things that were always around</h3>
+            <ul class="recipe-list" role="list">
+              <li>
+                <strong>Haldi + besan + milk</strong>
+                <p>The kind of paste that appeared before a bath, mixed quickly in a steel bowl and spread without much fuss.</p>
+              </li>
+              <li>
+                <strong>Aloe vera</strong>
+                <p>Usually cut straight from the plant, cool on the skin, and brought out whenever someone said their face felt tired.</p>
+              </li>
+              <li>
+                <strong>Coconut oil</strong>
+                <p>Always within reach, warmed between the hands, and used for everything from dry patches to weekend champi.</p>
+              </li>
+              <li>
+                <strong>Rice water</strong>
+                <p>Saved from the pot instead of thrown away, then left by the sink because Nani believed useful things should never be wasted.</p>
+              </li>
+            </ul>
+          </article>
+
+          <article class="recipe-group" role="listitem" aria-labelledby="recipe-group-trouble">
+            <h3 id="recipe-group-trouble">When something went wrong</h3>
+            <ul class="recipe-list" role="list">
+              <li>
+                <strong>Neem-based mixes</strong>
+                <p>Bitter, a little stubborn, and exactly what came out when skin was acting up and nothing else seemed convincing.</p>
+              </li>
+              <li>
+                <strong>Multani mitti + rose water</strong>
+                <p>For hot days, oily foreheads, or that feeling when your skin just needed to be left alone and cooled down.</p>
+              </li>
+              <li>
+                <strong>Chandan + yogurt</strong>
+                <p>Soft, calming, and usually suggested in the same voice that said not to touch your face so much.</p>
+              </li>
+            </ul>
+          </article>
+
+          <article class="recipe-group" role="listitem" aria-labelledby="recipe-group-special">
+            <h3 id="recipe-group-special">Special occasions</h3>
+            <ul class="recipe-list" role="list">
+              <li>
+                <strong>Saffron + milk</strong>
+                <p>Brought out more carefully, in smaller amounts, for weddings, festivals, and the kind of evenings that felt worth dressing up for.</p>
+              </li>
+              <li>
+                <strong>Haldi + besan + milk, again</strong>
+                <p>Because some things belonged to celebration too, especially when the whole house smelled like preparation.</p>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="mood-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="mood-title">How is your skin today?</h2>
+          <p class="section-lede">Pick what feels closest — nothing complicated.</p>
+        </div>
+
+        <div class="mood-options" role="group" aria-label="Skin mood options">
+          <button type="button" data-mood="dry" aria-pressed="false">Dry</button>
+          <button type="button" data-mood="acne" aria-pressed="false">Breakouts</button>
+          <button type="button" data-mood="dull" aria-pressed="false">Dull</button>
+          <button type="button" data-mood="sensitive" aria-pressed="false">Sensitive</button>
+        </div>
+
+        <div id="mood-result" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="image-break section" aria-label="A calm view of nani's kitchen">
+      <div class="container">
+        <figure class="editorial-break">
+          <img src="images/coconut.jpg" alt="A brass bowl of coconut oil and a wooden comb on a kitchen table, ready for a simple hair and skin ritual." />
+        </figure>
+      </div>
+    </section>
+
+    <section class="section facts" aria-labelledby="facts-title">
+      <div class="container">
+        <h2 id="facts-title">Did you know?</h2>
+        <p class="section-lede">Fun facts from the kitchen shelf.</p>
+        <div class="facts-box">
+          <p id="fact-text">Turmeric has natural anti-inflammatory properties.</p>
+          <button type="button" class="button button-ghost" id="fact-next">Show another</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Gentle, home-crafted care inspired by nani's timeless remedies.</p>
+    </div>
+  </footer>
+
+  <script src="js/nav.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

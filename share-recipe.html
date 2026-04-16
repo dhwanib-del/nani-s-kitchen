@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Share a Recipe — Nani's Skincare</title>
+  <meta name="description" content="Share a natural skincare remedy that's been passed down in your family." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/share.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <div class="nav-inner container">
+        <a href="index.html" class="nav-logo">Nani's <span>Skincare</span></a>
+        <button class="nav-toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Open navigation menu">Menu</button>
+        <ul class="nav-links" id="nav-links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Remedies</a></li>
+          <li><a href="routines.html">Routines</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="share-recipe.html" aria-current="page">Share</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" aria-labelledby="share-title">
+      <div class="container">
+        <p class="eyebrow">Share</p>
+        <h1 id="share-title">Share a recipe from home</h1>
+        <p class="hero-lead">If you grew up with something your nani swears by, write it down here. This is a space to collect the small things that work.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="form-heading">
+      <div class="container">
+        <form class="share-form" id="recipe-form" aria-labelledby="form-heading">
+          <h2 id="form-heading">Your remedy</h2>
+
+          <div class="form-group">
+            <label for="author-name">Your name (optional)</label>
+            <input type="text" id="author-name" name="author-name" placeholder="e.g. Priya" />
+          </div>
+
+          <div class="form-group">
+            <label for="recipe-name">Ingredient or remedy name</label>
+            <input type="text" id="recipe-name" name="recipe-name" placeholder="e.g. Rose water toner" required />
+          </div>
+
+          <div class="form-group">
+            <label for="what">What you use</label>
+            <textarea id="what" name="what" rows="3" placeholder="List the ingredients" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="how">How you use it</label>
+            <textarea id="how" name="how" rows="4" placeholder="Explain how you make or apply it" required></textarea>
+          </div>
+
+          <button type="submit" class="button button-primary">Submit</button>
+        </form>
+
+        <p class="footnote">Nothing fancy. Just what works.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Gentle, home-crafted care inspired by nani's timeless remedies.</p>
+    </div>
+  </footer>
+
+  <script src="js/nav.js" defer></script>
+</body>
+</html>
