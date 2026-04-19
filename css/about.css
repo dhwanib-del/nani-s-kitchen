@@ -118,21 +118,6 @@
   border-color: var(--accent);
 }
 
-.world-video {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  aspect-ratio: 9 / 16;
-  border-radius: 12px;
-  background: #000;
-}
-
-.world-video iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
 .world-card-text h3 {
   margin: 0;
   font-size: 1.3rem;
@@ -141,6 +126,30 @@
 .world-card-text p {
   margin: 0;
   color: var(--text);
+}
+
+.world-link {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: var(--space-2);
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--green);
+  text-decoration: none;
+  font-weight: 500;
+  transition: border-color 140ms ease, color 140ms ease, background-color 140ms ease;
+}
+
+.world-link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.world-link:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
 }
 
 /* Fade-in animation */
